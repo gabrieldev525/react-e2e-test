@@ -30,12 +30,22 @@
     width: 100%;
     border: 1px solid #ccc;
     padding: 2%;
+    border-radius: 14px 0 0 14px;
+}
+.container form input[type=text]:focus {
+    border-color: rgb(136, 41, 190);
 }
 .container form input[type=submit] {
     padding: 0 5%;
     border: 0;
     background-color: rgb(136, 41, 190);
     color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius: 0 14px 14px 0;
+}
+.container form input[type=submit]:hover {
+    background-color: rgb(101, 27, 145);
 }
 
 /* table */
@@ -54,4 +64,18 @@
 }
 .container table td {
     text-align: center;
+}
+
+.remove-button {
+    border: 0;
+    fill: rgb(190, 41, 41) !important;
+    border-radius: 14px;
+    padding: 8%;
+    cursor: pointer;
+    transition: 0.25s;
+    width: 19px;
+    height: 19px;
+}
+.remove-button:hover {
+    fill: rgb(155, 29, 29);
 }
